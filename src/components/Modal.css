@@ -67,6 +67,7 @@
 .modal__body {
   padding: var(--space-lg);
   overflow-y: auto;
+  overflow-x: hidden;
   min-height: 0;
 }
 
@@ -76,5 +77,11 @@
   gap: var(--space-sm);
   padding: var(--space-lg);
   border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 640px) {
+  .modal-overlay {
+    padding: 1rem;
+  }
 }
 

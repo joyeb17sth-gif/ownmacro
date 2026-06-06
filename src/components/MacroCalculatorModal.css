@@ -117,6 +117,9 @@
 }
 
 @media (max-width: 640px) {
+  .macro-calculator__grid {
+    grid-template-columns: 1fr;
+  }
   .goal-cards {
     grid-template-columns: 1fr;
   }
