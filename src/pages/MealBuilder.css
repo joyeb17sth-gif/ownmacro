@@ -413,4 +413,16 @@
   .meal-builder__name-card {
     padding: 12px 16px;
   }
+
+  .meal-builder__qty-btn,
+  .meal-builder__remove-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .meal-builder__qty-input {
+    width: 60px;
+    padding: 6px 4px;
+    font-size: 1rem;
+  }
 }
