@@ -1,0 +1,93 @@
+.nutrition-table {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.nutrition-table__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.nutrition-table__heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nutrition-table__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nutrition-table__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 6px 0;
+}
+
+.nutrition-table__indicator {
+  width: 4px;
+  height: 20px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.nutrition-table__label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  min-width: 90px;
+}
+
+.nutrition-table__value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 80px;
+  text-align: right;
+}
+
+.nutrition-table__unit {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 3px;
+}
+
+.nutrition-table__bar-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 100px;
+}
+
+.nutrition-table__bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.nutrition-table__bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nutrition-table__pct {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-width: 35px;
+  text-align: right;
+}

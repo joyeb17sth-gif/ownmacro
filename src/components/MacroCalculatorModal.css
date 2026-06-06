@@ -1,0 +1,126 @@
+.macro-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.macro-calculator__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.macro-calculator__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-group {
+  display: flex;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  padding: 4px;
+}
+
+.btn-group .btn {
+  flex: 1;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+
+.goal-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.goal-card {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-xs);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.goal-card:hover {
+  border-color: var(--accent-primary);
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.goal-card--active {
+  border-color: var(--accent-primary);
+  background: rgba(0, 212, 170, 0.1);
+  box-shadow: 0 0 0 2px rgba(0, 212, 170, 0.2);
+}
+
+.goal-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.goal-card__label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.goal-card__desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.macro-calculator__preview {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  border: 1px solid var(--accent-primary);
+  box-shadow: 0 8px 32px rgba(0, 212, 170, 0.15);
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.preview-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-sm);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  border-bottom: 3px solid;
+}
+
+.preview-stat span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.preview-stat strong {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .goal-cards {
+    grid-template-columns: 1fr;
+  }
+  .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

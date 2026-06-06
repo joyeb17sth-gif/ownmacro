@@ -1,0 +1,50 @@
+.macro-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.macro-ring__progress {
+  transition: stroke-dashoffset 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.macro-ring__content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.macro-ring__value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.macro-ring__unit {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.macro-ring__label {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+/* Size variants for smaller rings */
+.macro-ring--sm .macro-ring__value {
+  font-size: 0.85rem;
+}
+
+.macro-ring--sm .macro-ring__label {
+  font-size: 0.55rem;
+}

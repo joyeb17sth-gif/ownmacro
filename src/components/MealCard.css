@@ -1,0 +1,114 @@
+.meal-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.meal-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.meal-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.meal-card__time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-right: var(--space-sm);
+}
+
+.meal-card__items-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.meal-card__actions {
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.meal-card:hover .meal-card__actions {
+  opacity: 1;
+}
+
+.meal-card__stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.meal-card__calories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.meal-card__cal-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-calories);
+  line-height: 1;
+}
+
+.meal-card__cal-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.meal-card__macro-bars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.meal-card__macro-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.meal-card__macro-name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  width: 14px;
+  text-align: center;
+}
+
+.meal-card__macro-bar {
+  flex: 1;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.meal-card__macro-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.meal-card__macro-val {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 30px;
+  text-align: right;
+}
