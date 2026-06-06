@@ -286,7 +286,7 @@ const MealBuilder = () => {
         {/* Right: Meal Composition */}
         <div className="meal-builder__composition">
           {/* Meal name */}
-          <div className="glass-card glass-card--static">
+          <div className="glass-card glass-card--static meal-builder__name-card">
             <input
               type="text"
               className="form-input meal-builder__name-input"

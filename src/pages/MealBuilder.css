@@ -357,6 +357,7 @@
 @media (max-width: 1024px) {
   .meal-builder__layout {
     grid-template-columns: 1fr;
+    gap: var(--space-lg);
   }
 
   .meal-builder__foods {
@@ -365,13 +366,35 @@
   }
 
   .meal-builder__food-list {
-    max-height: 300px;
+    max-height: 280px;
   }
 }
 
 @media (max-width: 768px) {
+  .meal-builder__layout {
+    gap: var(--space-md);
+  }
+
+  .meal-builder__food-list {
+    max-height: 220px;
+  }
+
+  .meal-builder__food-item {
+    padding: 8px 12px;
+  }
+
+  .meal-builder__food-emoji {
+    font-size: 1.1rem;
+    width: 24px;
+  }
+
+  .meal-builder__food-name {
+    font-size: 0.8rem;
+  }
+
   .meal-builder__chart-row {
     flex-direction: column;
+    gap: var(--space-md);
   }
 
   .meal-builder__actions {
@@ -380,5 +403,14 @@
 
   .meal-builder__item-controls {
     flex-wrap: wrap;
+  }
+
+  .meal-builder__name-input {
+    font-size: 1rem;
+    padding: 4px 0;
+  }
+
+  .meal-builder__name-card {
+    padding: 12px 16px;
   }
 }
