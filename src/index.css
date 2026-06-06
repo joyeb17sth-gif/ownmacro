@@ -617,8 +617,8 @@ h4 { font-size: 1.1rem; }
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
-    padding: var(--space-md);
-    padding-bottom: 80px;
+    padding: var(--space-lg);
+    padding-bottom: 100px;
   }
 
   .grid-4,
@@ -637,7 +637,7 @@ h4 { font-size: 1.1rem; }
 
 @media (max-width: 480px) {
   .main-content {
-    padding: var(--space-sm);
-    padding-bottom: 80px;
+    padding: var(--space-lg);
+    padding-bottom: 100px;
   }
 }
